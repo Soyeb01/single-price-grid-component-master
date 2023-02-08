@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: hsl(204deg, 43%, 93%);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.gotcha {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 8px;
+  box-shadow: 1px 2px 20px 1px hsla(218deg, 22%, 67%, 0.5);
+  height: 475px;
+  width: 635px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 47% 53%;
+}
+
+.c {
+  padding: 44px 40px;
+}
+
+.cont1 {
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+  grid-column: 1/span 2;
+}
+.cont1 h1 {
+  font-weight: 700;
+  font-size: 21px;
+  color: hsl(179deg, 62%, 43%);
+  padding-bottom: 28px;
+}
+.cont1 h2 {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: hsl(71deg, 73%, 54%);
+}
+.cont1 p {
+  line-height: 1.7;
+  color: hsl(218deg, 22%, 67%);
+}
+
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 0 0 0 6px;
+  background-color: rgb(43, 179, 177);
+}
+.cont2 button {
+  border: 0 none;
+  box-shadow: 2px 1px 10px 1px rgb(37, 155, 153);
+  color: hsl(204deg, 43%, 98%);
+  font-weight: 700;
+  background-color: hsl(71deg, 73%, 54%);
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+}
+.cont2 h1 {
+  font-size: 1rem;
+  color: hsl(204deg, 43%, 93%);
+}
+.cont2 .para {
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+  color: hsl(179deg, 62%, 85%);
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.rate .one {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: hsl(204deg, 43%, 93%);
+}
+.rate .two {
+  color: rgb(118, 226, 228);
+}
+
+.cont3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 0 6px 0;
+  background-color: rgb(74, 190, 189);
+}
+.cont3 h1 {
+  font-size: 1rem;
+  color: hsl(204deg, 43%, 93%);
+}
+.cont3 p {
+  line-height: 1.45;
+  font-size: 13px;
+  color: hsla(204deg, 43%, 93%, 0.6);
+}
+
+.attribution {
+  font-size: 10px;
+  opacity: 0.5;
+}
+.attribution a {
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .gotcha {
+    height: 870px;
+  }
+  .container {
+    height: 722px;
+    width: 311px;
+    grid-template-columns: 100%;
+    grid-template-rows: 267px 228px 227px;
+  }
+  .c {
+    padding: 28px 25px;
+  }
+  .cont1 {
+    border-radius: 6px 6px 0 0;
+    grid-column: 1/1;
+  }
+  .cont1 h1 {
+    font-size: 1.15rem;
+    color: hsl(179deg, 62%, 43%);
+    padding-bottom: 20px;
+  }
+  .cont1 h2 {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .cont1 p {
+    font-size: 13px;
+    line-height: 2;
+  }
+  .cont2 {
+    border-radius: 0;
+  }
+  .cont2 button {
+    border-radius: 4px;
+    height: 48px;
+  }
+  .cont2 h1 {
+    font-size: 1.1rem;
+    color: hsl(204deg, 43%, 93%);
+  }
+  .cont2 .para {
+    font-size: 15px;
+    position: relative;
+    top: -12px;
+    color: hsl(179deg, 62%, 85%);
+  }
+  .rate {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .rate .one {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: hsl(204deg, 43%, 93%);
+  }
+  .rate .two {
+    color: rgb(118, 226, 228);
+  }
+  .cont3 {
+    border-radius: 0 0 4px 4px;
+  }
+  .cont3 h1 {
+    font-size: 1.1rem;
+  }
+  .cont3 p {
+    line-height: 1.5;
+    font-size: 13px;
+    color: hsla(204deg, 43%, 93%, 0.6);
+  }
+}/*# sourceMappingURL=main.css.map */
